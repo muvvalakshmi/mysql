@@ -1,3 +1,8 @@
+MYSQL DATABASE:
+---------------
+CREATE DATABASE mydb;
+use mydb;
+
 1.Employee Table creation:
 --------------------------
 mysql>CREATE TABLE Employees(EmpNo INT(3) PRIMARY KEY,EName VARCHAR(35) NOT NULL,jCode INT(3) REFERENCES job(jCode),MgrNo INT(3) REFERENCES Employee(EmpNo),HireDate DATE,Salary INT(10),Commission FLOAT(11,2),DeptNo INT(3) REFERENCES Department(DeptNo));
